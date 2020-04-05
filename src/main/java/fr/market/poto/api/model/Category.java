@@ -17,6 +17,4 @@ public class Category {
     @Setter
      Integer id;
 
-    /*@OneToOne(fetch = FetchType.LAZY, optional = false)
-    Article article;*/
 }

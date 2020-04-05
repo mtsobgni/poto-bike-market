@@ -38,7 +38,4 @@ public class Announcement {
     @Enumerated(EnumType.STRING)
     TypeOffre typeOffre;
 
-    /*@Getter @Setter
-    @OneToOne(fetch = FetchType.LAZY, optional = false, mappedBy = "announcement")
-    Article article;*/
 }

@@ -11,6 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level= AccessLevel.PRIVATE)
+@Table (name = "user_poto")
 public class User {
 
     @Id
@@ -18,6 +19,7 @@ public class User {
     @Getter @Setter
      Integer Id;
 
+    @Column(name = "username")
     @Getter @Setter
      String userName;
 
@@ -27,9 +29,11 @@ public class User {
     @Getter @Setter
      String email;
 
+    @Column(name = "created_on")
     @Getter @Setter
      LocalDateTime createdOn;
 
+    @Column(name = "last_login")
     @Getter @Setter
      LocalDateTime lastLogin;
 
