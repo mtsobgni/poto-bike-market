@@ -1,5 +1,6 @@
 package fr.market.poto.api.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -12,6 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @FieldDefaults(level= AccessLevel.PRIVATE)
 @Table (name = "user_poto")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class User {
 
     @Id

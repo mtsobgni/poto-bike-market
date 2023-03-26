@@ -11,7 +11,7 @@ public class ImageModelApiMapper {
         ImageModel result = new ImageModel();
         result.setName(imageModelRequest.getName());
         result.setType(imageModelRequest.getType());
-        result.setArticle(imageModelRequest.getArticle());
+        result.setBook(imageModelRequest.getBook());
         result.setPicBytes(imageModelRequest.getPicBytes());
         return result;
     }

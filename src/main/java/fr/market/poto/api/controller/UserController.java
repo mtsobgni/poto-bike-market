@@ -7,8 +7,10 @@ import fr.market.poto.api.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.security.RolesAllowed;
 import javax.validation.Valid;
 
+@RolesAllowed("USER")
 @RequestMapping(path = "/user")
 @RestController
 public class UserController {
@@ -19,11 +21,12 @@ public class UserController {
     @Autowired
     private UserApiMapper userApiMapper;
 
-    @GetMapping(value = "/userId", produces = "application/json")
-    public User getUser (Integer user_id){
-        return userService.getUserById(user_id);
+    @GetMapping(value = "/userId/{userId}", produces = "application/json")
+    public User getUser (@PathVariable Integer userId){
+        return userService.getUserById(userId);
     }
 
+    //@ResponseStatus(HttpStatus.OK)
     @PostMapping(value = "/saveUser", produces = "application/json")
     public User saveUser (@Valid @RequestBody UserRequest userRequest){
         return userService.saveUser(userApiMapper.convertUserRequest(userRequest));

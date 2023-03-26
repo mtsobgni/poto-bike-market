@@ -1,14 +1,12 @@
 package fr.market.poto.api.controller.model;
 
-import fr.market.poto.api.model.Article;
-import io.swagger.annotations.ApiModel;
+import fr.market.poto.api.model.Book;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level= AccessLevel.PRIVATE)
-@ApiModel
 public class ImageModelRequest {
 
     @Getter @Setter
@@ -24,5 +22,5 @@ public class ImageModelRequest {
     private byte[] picBytes;
 
     @Getter @Setter
-    Article article;
+    Book book;
 }

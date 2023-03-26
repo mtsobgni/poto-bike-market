@@ -1,17 +1,16 @@
 package fr.market.poto.api.controller.model;
 
 import fr.market.poto.api.model.*;
-import io.swagger.annotations.ApiModel;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level= AccessLevel.PRIVATE)
-@ApiModel
-public class ArticleRequest {
+public class BookRequest {
 
     @Getter @Setter
     Integer id;
@@ -20,7 +19,7 @@ public class ArticleRequest {
     Double price;
 
     @Getter @Setter
-    String description;
+    String title;
 
     @Getter @Setter
     Announcement announcement;
@@ -29,5 +28,24 @@ public class ArticleRequest {
     List<ImageModel> imageModels;
 
     @Getter @Setter
-    Category category;
+    LocalDateTime purchaseDate;
+
+    @Getter @Setter
+    Classe classe;
+
+    @Getter @Setter
+    ClassePrimaire classePrimaire;
+
+    @Getter @Setter
+    Editeur editeur;
+
+    @Getter @Setter
+    BookCondition bookCondition;
+
+    @Getter @Setter
+    LevelOfStudies levelOfStudies;
+
+    @Getter @Setter
+    Course course;
+
 }

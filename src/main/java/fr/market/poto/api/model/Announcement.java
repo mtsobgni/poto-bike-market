@@ -24,6 +24,7 @@ public class Announcement {
      String description;
 
     @Getter @Setter
+    @Column( name = "creationdate")
      LocalDateTime creationDate;
 
     @Getter @Setter
@@ -32,7 +33,7 @@ public class Announcement {
 
     @Getter @Setter
     @Enumerated(EnumType.STRING)
-    TypeAnnonce typeAnnonce;
+    TypeAnnouncement typeAnnouncement;
 
     @Getter @Setter
     @Enumerated(EnumType.STRING)

@@ -1,12 +1,8 @@
 package fr.market.poto.api.controller;
 
-import fr.market.poto.api.controller.mapper.ArticleApiMapper;
 import fr.market.poto.api.controller.mapper.ImageModelApiMapper;
-import fr.market.poto.api.controller.model.ArticleRequest;
 import fr.market.poto.api.controller.model.ImageModelRequest;
-import fr.market.poto.api.model.Article;
 import fr.market.poto.api.model.ImageModel;
-import fr.market.poto.api.service.ArticleService;
 import fr.market.poto.api.service.ImageModelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

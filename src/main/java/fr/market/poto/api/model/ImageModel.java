@@ -1,6 +1,5 @@
 package fr.market.poto.api.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -28,7 +27,7 @@ public class ImageModel {
 
     @Getter @Setter
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    Article article;
+    Book book;
 
 }
 

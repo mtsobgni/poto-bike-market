@@ -12,7 +12,7 @@ public class AnnouncementApiMapper {
         result.setTitle(announcementRequest.getTitle());
         result.setDescription(announcementRequest.getDescription());
         result.setCreationDate(announcementRequest.getCreationDate());
-        result.setTypeAnnonce(announcementRequest.getTypeAnnonce());
+        result.setTypeAnnouncement(announcementRequest.getTypeAnnouncement());
         result.setTypeOffre(announcementRequest.getTypeOffre());
         result.setUser(announcementRequest.getUser());
         return result;

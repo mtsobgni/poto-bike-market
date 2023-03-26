@@ -16,5 +16,4 @@ public class Category {
     @Getter
     @Setter
      Integer id;
-
 }

@@ -14,7 +14,7 @@ public class UserApiMapper {
         result.setLastLogin(userRequest.getLastLogin());
         result.setCreatedOn(userRequest.getCreatedOn());
         result.setEmail(userRequest.getEmail());
-        result.setAnnouncementList(userRequest.getAnnouncementList());
+        //result.setAnnouncementList(userRequest.getAnnouncementList());
         return result;
     }
 }

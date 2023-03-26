@@ -35,7 +35,7 @@ public class CategoryController {
     }
 
     @DeleteMapping(value = "/deleteCategory", produces = "application/json")
-    public void delete (Integer id){
+    public void delete(Integer id) {
         categoryService.deleteCategory(id);
     }
 

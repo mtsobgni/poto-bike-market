@@ -1,6 +1,6 @@
 package fr.market.poto.api.model;
 
-public enum TypeAnnonce {
+public enum TypeAnnouncement {
     OFFRE,
     DEMANDE;
 }
